@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G2 (Goodachari 2) - Official Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+
+</head>
+<body>
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <div class="hero-overlay">
+                <h1 class="hero-title">G2</h1>
+                <p class="hero-subtitle">GOODACHARI 2</p>
+                <p class="hero-tagline">The spy thriller continues...</p>
+                <div class="hero-buttons">
+                    <button class="btn btn--primary" onclick="scrollToSection('gallery')">Explore Gallery</button>
+                    <button class="btn btn--outline" onclick="scrollToSection('cast')">Meet the Cast</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <nav class="tab-navigation">
+        <div class="container">
+            <button class="tab-btn active" data-tab="gallery">Gallery</button>
+            <button class="tab-btn" data-tab="cast">Cast & Crew</button>
+            <button class="tab-btn" data-tab="overview">Film Overview</button>
+            <button class="tab-btn" data-tab="social">Social Buzz</button>
+            <button class="tab-btn" data-tab="videos">Videos</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Image Gallery Section -->
+        <section id="gallery" class="section active">
+            <div class="container">
+                <h2>Image Gallery</h2>
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="poster">Posters</button>
+                    <button class="filter-btn" data-filter="cast">Cast Photos</button>
+                    <button class="filter-btn" data-filter="location">Locations</button>
+                    <button class="filter-btn" data-filter="action">Action</button>
+                    <button class="filter-btn" data-filter="behind_scenes">Behind Scenes</button>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="poster">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748933258/pplx_project_search_images/284f10082c2f19d40c5c89bf9f26dcac5a7533f7.jpg" alt="Main promotional poster with Adivi Sesh action shot">
+                        <div class="gallery-overlay">
+                            <h3>Main Poster</h3>
+                            <p>Action shot with Adivi Sesh</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="location">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748933259/pplx_project_search_images/d6b29f1669daa68a35f97a6be8d7cbf21dc2e45f.jpg" alt="Paris location shot with Wamiqa and Adivi near Eiffel Tower">
+                        <div class="gallery-overlay">
+                            <h3>Paris Location</h3>
+                            <p>Wamiqa & Adivi near Eiffel Tower</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cast">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748933258/pplx_project_search_images/44f4a0d2036c5e315f55ff6e38a8475a68046d4a.jpg" alt="Emraan Hashmi welcome poster">
+                        <div class="gallery-overlay">
+                            <h3>Emraan Hashmi</h3>
+                            <p>Welcome to the mission</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="behind_scenes">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748933259/pplx_project_search_images/bca074d34bba002319b9d4124654490b95d309ea.jpg" alt="Behind-the-scenes with film slate and Adivi Sesh portrait">
+                        <div class="gallery-overlay">
+                            <h3>Behind the Scenes</h3>
+                            <p>Film slate & production</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cast">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748933258/pplx_project_search_images/3744f7b9aeb8011e8cd2c4fd869324ecad5dc1bf.jpg" alt="Wamiqa Gabbi promotional photo">
+                        <div class="gallery-overlay">
+                            <h3>Wamiqa Gabbi</h3>
+                            <p>Female lead</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="action">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748933277/pplx_project_search_images/a26d9779c40d95106ef4c4a7eddd9a954c66d851.jpg" alt="Action sequences collage with Adivi Sesh">
+                        <div class="gallery-overlay">
+                            <h3>Action Sequences</h3>
+                            <p>High-octane spy thriller</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="poster">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748933259/pplx_project_search_images/230a8c4e300e2f2459ecec5ed9cb20178b3ba030.jpg" alt="Split promotional poster with announcement date">
+                        <div class="gallery-overlay">
+                            <h3>Announcement Poster</h3>
+                            <p>Split design with date</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="action">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748933277/pplx_project_search_images/e65660dd2a9b082dd118e715e01cf3e380d161dd.jpg" alt="Action shot with rifle and crates">
+                        <div class="gallery-overlay">
+                            <h3>Action Shot</h3>
+                            <p>Rifle & tactical gear</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cast & Crew Section -->
+        <section id="cast" class="section">
+            <div class="container">
+                <h2>Cast & Crew</h2>
+                <div class="cast-grid">
+                    <div class="cast-card">
+                        <div class="cast-image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1748933259/pplx_project_search_images/bca074d34bba002319b9d4124654490b95d309ea.jpg" alt="Adivi Sesh">
+                        </div>
+                        <div class="cast-info">
+                            <h3>Adivi Sesh</h3>
+                            <p class="character">Agent M. Gopi / M. Arjun Kumar</p>
+                            <p class="role">Lead Actor & Screenplay Writer</p>
+                            <a href="https://en.wikipedia.org/wiki/Adivi_Sesh" target="_blank" class="btn btn--sm btn--outline">View Wikipedia</a>
+                        </div>
+                    </div>
+                    <div class="cast-card">
+                        <div class="cast-image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1748933258/pplx_project_search_images/44f4a0d2036c5e315f55ff6e38a8475a68046d4a.jpg" alt="Emraan Hashmi">
+                        </div>
+                        <div class="cast-info">
+                            <h3>Emraan Hashmi</h3>
+                            <p class="character">Rahul</p>
+                            <p class="role">Supporting Lead</p>
+                            <a href="https://en.wikipedia.org/wiki/Emraan_Hashmi" target="_blank" class="btn btn--sm btn--outline">View Wikipedia</a>
+                        </div>
+                    </div>
+                    <div class="cast-card">
+                        <div class="cast-image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1748933258/pplx_project_search_images/3744f7b9aeb8011e8cd2c4fd869324ecad5dc1bf.jpg" alt="Wamiqa Gabbi">
+                        </div>
+                        <div class="cast-info">
+                            <h3>Wamiqa Gabbi</h3>
+                            <p class="character">Ayesha Khan</p>
+                            <p class="role">Female Lead</p>
+                            <a href="https://en.wikipedia.org/wiki/Wamiqa_Gabbi" target="_blank" class="btn btn--sm btn--outline">View Wikipedia</a>
+                        </div>
+                    </div>
+                    <div class="cast-card">
+                        <div class="cast-image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1748933259/pplx_project_search_images/d6b29f1669daa68a35f97a6be8d7cbf21dc2e45f.jpg" alt="Cast ensemble">
+                        </div>
+                        <div class="cast-info">
+                            <h3>Prakash Raj</h3>
+                            <p class="character">Satya (ex-RAW agent)</p>
+                            <p class="role">Supporting</p>
+                            <a href="https://en.wikipedia.org/wiki/Prakash_Raj" target="_blank" class="btn btn--sm btn--outline">View Wikipedia</a>
+                        </div>
+                    </div>
+                    <div class="cast-card">
+                        <div class="cast-image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1748933277/pplx_project_search_images/a26d9779c40d95106ef4c4a7eddd9a954c66d851.jpg" alt="Agent profile">
+                        </div>
+                        <div class="cast-info">
+                            <h3>Madhu Shalini</h3>
+                            <p class="character">Agent Leena Rajan</p>
+                            <p class="role">Supporting</p>
+                            <a href="https://en.wikipedia.org/wiki/Madhu_Shalini" target="_blank" class="btn btn--sm btn--outline">View Wikipedia</a>
+                        </div>
+                    </div>
+                    <div class="cast-card">
+                        <div class="cast-image">
+                            <img src="https://cinetown.s3.ap-south-1.amazonaws.com/people/profile_img/1703178749.jpeg" alt="Cast photo">
+                        </div>
+                        <div class="cast-info">
+                            <h3>Supriya Yarlagadda</h3>
+                            <p class="character">Agent Nadiya Qureshi</p>
+                            <p class="role">Supporting</p>
+                            <a href="https://en.wikipedia.org/wiki/Akkineni–Daggubati_family" target="_blank" class="btn btn--sm btn--outline">View Wikipedia</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="crew-section">
+                    <h3>Key Crew Members</h3>
+                    <div class="crew-grid">
+                        <div class="crew-item">
+                            <h4>Vinay Kumar Sirigineedi</h4>
+                            <p>Director, Screenplay Writer</p>
+                            <span>Debut direction, previously editor of Major</span>
+                        </div>
+                        <div class="crew-item">
+                            <h4>Sricharan Pakala</h4>
+                            <p>Music Director</p>
+                            <span>Acclaimed composer</span>
+                        </div>
+                        <div class="crew-item">
+                            <h4>Azeem Mohammad</h4>
+                            <p>Cinematographer</p>
+                            <span>International locations specialist</span>
+                        </div>
+                        <div class="crew-item">
+                            <h4>TG Vishwa Prasad</h4>
+                            <p>Producer</p>
+                            <span>People Media Factory</span>
+                        </div>
+                        <div class="crew-item">
+                            <h4>Kodati Pavan Kalyan</h4>
+                            <p>Editor</p>
+                            <span>Editor of Major, Colour photo and 15 other films</span>
+                        </div>
+                        <div class="crew-item">
+                            <h4>Abburi Ravi</h4>
+                            <p>Dialogue</p>
+                            <span>Veteran dialogue writer in TFI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Film Overview Section -->
+        <section id="overview" class="section">
+            <div class="container">
+                <h2>Film Overview</h2>
+                <div class="overview-content">
+                    <div class="overview-main">
+                        <div class="film-poster">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1748933259/pplx_project_search_images/230a8c4e300e2f2459ecec5ed9cb20178b3ba030.jpg" alt="G2 Poster">
+                        </div>
+                        <div class="film-details">
+                            <h3>G2 (Goodachari 2)</h3>
+                            <div class="film-info">
+                                <div class="info-item">
+                                    <span class="label">Genre:</span>
+                                    <span class="value">Spy Thriller</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Languages:</span>
+                                    <span class="value">Telugu, Hindi, Tamil, Kannada, Malayalam</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Budget:</span>
+                                    <span class="value">₹100 crore</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Status:</span>
+                                    <span class="value status--info">Post-production</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Release Date:</span>
+                                    <span class="value">June 2025 (Expected)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="synopsis">
+                        <h4>Synopsis</h4>
+                        <p>G2 continues the story of Indian spy Agent Gopi on an overseas mission to fight for his country, picking up where the original Goodachari left off. The film promises high-octane action sequences, international locations, and cutting-edge spy thriller technology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Buzz Section -->
+        <section id="social" class="section">
+            <div class="container">
+                <h2>Social Media & Sentiment</h2>
+                <div class="social-content">
+                    <div class="sentiment-chart">
+                        <h3>Audience Sentiment</h3>
+                        <div class="chart-container">
+                            <canvas id="sentimentChart"></canvas>
+                        </div>
+                        <div class="interest-metric">
+                            <span class="interest-number">29.8K</span>
+                            <span class="interest-label">users showing interest on BookMyShow</span>
+                        </div>
+                    </div>
+                    <div class="social-buzz">
+                        <h3>Social Buzz Highlights</h3>
+                        <div class="buzz-items">
+                            <div class="buzz-item">
+                                <span class="buzz-icon">🎬</span>
+                                <p>Massive ₹100 crore budget upgrade from original</p>
+                            </div>
+                            <div class="buzz-item">
+                                <span class="buzz-icon">🌍</span>
+                                <p>International filming in UAE and Europe</p>
+                            </div>
+                            <div class="buzz-item">
+                                <span class="buzz-icon">🎭</span>
+                                <p>Emraan Hashmi's Telugu debut creating pan-Indian appeal</p>
+                            </div>
+                            <div class="buzz-item">
+                                <span class="buzz-icon">📈</span>
+                                <p>High expectations following Goodachari's success</p>
+                            </div>
+                            <div class="buzz-item">
+                                <span class="buzz-icon">🔥</span>
+                                <p>Advanced spy thriller technology and action sequences</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section id="videos" class="section">
+            <div class="container">
+                <h2>YouTube Content Hub</h2>
+                <div class="videos-grid">
+                    <div class="video-item">
+                        <div class="video-embed">
+                            <iframe src="https://www.youtube.com/embed/snx398zoixA" title="G2 Content" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3>G2 Official Content</h3>
+                        <p>Latest updates and content from the G2 universe</p>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-embed">
+                            <iframe src="https://www.youtube.com/embed/yHVTXU-s_JA" title="Goodachari Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3>Goodachari Prequel Teaser</h3>
+                        <p>Revisit the original spy thriller that started it all</p>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-embed">
+                            <iframe src="https://www.youtube.com/watch?v=V-8GGhn0oDk" title="Goodachari Trailer Prequel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3>Goodachari Prequel Trailer</h3>
+                        <p>Deep dive into the Goodachari universe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
